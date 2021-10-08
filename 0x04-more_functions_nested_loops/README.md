@@ -17,5 +17,5 @@ all the following files are tasks:
 | [ `8-print_square.c` ] | function that prints a square, Use the character # to print the square |
 | [ `9-fizz_buzz.c` ] | program that prints the numbers from 1 to 100. But for multiples of 3 it prints Fizz instead of the number and for multiples of 5 it prints Buzz. and for multiples of 3 and 5, print FizzBuzz |
 | [ `10-print_triangle.c` ] | function that prints a triangle. If size is 0 or less, the function should print only a new line Use the character # to print the triangle|
-| [ `11-` ] | .|
-| [ `12-` ] | . |
+| [ `100-prime_factor.c` ] | program that finds and prints the largest prime factor of the number 612852475143, followed by a new line |
+| [ `101-print_number.c` ] | function that prints an integer. without using arrays or pointers |
