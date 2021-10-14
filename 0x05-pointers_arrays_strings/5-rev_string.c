@@ -17,7 +17,7 @@ void rev_string(char *s)
 	{
 		if (s[length] == '\0')
 		{
-			break:
+			break;
 		}
 		length++;
 	}
