@@ -1,18 +1,19 @@
 #include "main.h"
 
 /**
- * rev_string -
+ * rev_string - prints a string, in reverse
+ * followed by a new line.
  *
  * @s: input string.
  *
- * Return: no return
+ * Return: no return.
  */
 
 void rev_string(char *s)
 {
 	int length = 0;
 
-	while (length >0 0)
+	while (length >= 0)
 	{
 		if (s[length] == '\0')
 		{
