@@ -1,26 +1,24 @@
 #include "main.h"
 
 /**
- * print_number - Prints an integer using _putchar function
- * @n: Integer to print
- * Return: void
+ * print_number - prints an integer;
+ * @n: integer to be printed;
  */
-
 void print_number(int n)
 {
-	int power10 = 1, digit;
+	unsigned int n1;
 
 	if (n < 0)
 	{
-		n *= -1;
+		n1 = -n;
 		_putchar('-');
-	}
-	while (power10 * 10 <= n)
-		power10 *= 10;
-	while (power10 > 0)
+	} else
 	{
-		digit = (n / power10) % 10;
-		power10 /= 10;
-		_putchar('0' + digit);
+		n1 = n;
 	}
+
+	if (n1 / 10)
+		print_number(n1 / 10);
+
+	_putchar((n1 % 10) + '0');
 }
