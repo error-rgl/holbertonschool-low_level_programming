@@ -9,14 +9,15 @@
 
 int square_root(int count, int n)
 {
-	if (count % (n / count) == 0)
+	if (count * count == n)
 	{
-		if (count * (n / count) == n)
-			return (count);
-		else
-			return (-1);
+       		return (count);
 	}
-	return (0 + square_root(n, count + 1));
+	if (count * count > n)
+	{
+		return (-1);
+	}
+	return (square_root(count + 1, n));
 }
 /**
  * _sqrt_recursion - returns the natural square root of a number.
@@ -29,7 +30,6 @@ int _sqrt_recursion(int n)
 		return (-1);
 	if (n == 0)
 		return (0);
-	if (n == 1)
-		return (1);
-	return (square_root(n, 2));
+
+	return (square_root(n, 1));
 }
