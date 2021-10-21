@@ -11,7 +11,7 @@ int square_root(int count, int n)
 {
 	if (count * count == n)
 	{
-       		return (count);
+		return (count);
 	}
 	if (count * count > n)
 	{
