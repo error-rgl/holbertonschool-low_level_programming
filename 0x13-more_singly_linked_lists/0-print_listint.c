@@ -8,7 +8,7 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	size_t num_nodes = 0;
+	unsigned int  num_nodes = 0;
 	/*mientras que la cabecera de la lista sea*/
 	/*diferente a nulo, imprimimos el numero de nodos*/
 	while (h != NULL)
