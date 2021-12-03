@@ -9,25 +9,24 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int file_desc;
-	ssize_t num_bit;
-	char * buffer;
+	ssize_t num_bit, num_write;
+	char *buffer;
 
 	if (!filename)
 		return (0);
 
 	file_desc = open(filename, O_RDONLY);
-	if (fd == -1)
+	if (file_desc == -1)
 	{
 		return (0);
 	}
 	else
 	{
-		buf = malloc(sizeof(char) * letters);
+		buffer = malloc(sizeof(char) * letters);
 		if (!buffer)
 			return (0);
-
 		num_bit = read(file_desc, buffer, letters);
-		num_write = write(STDOUT_FILENO, buf, num_bit);
+		num_write = write(STDOUT_FILENO, buffer, num_bit);
 
 		close(file_desc);
 		free(buffer);
